@@ -5,5 +5,3 @@ function doYouPlayTheTheremin(name){
 		return name + " does not play the Theremin!";
 	}
 }
-
-// The Solution Video for this problem is "Day 1 - areYouPlayingBanjo"
