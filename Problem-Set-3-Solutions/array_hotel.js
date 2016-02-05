@@ -7,3 +7,18 @@ function findVacantRooms(arr){
 	}
 	return vacantRooms;
 }
+function findCheapestVacantRoom(arr){
+	var cheapestRoom = [];
+	var cheapest;
+
+	for(var i = 0; i < arr.length; i++){
+		if(typeof arr[i] === 'number'){
+			if(!cheapest || arr[i] < cheapest){
+				cheapest = arr[i];
+				cheapestRoom.push(i, arr[i]);
+			}
+		}
+	}
+
+	return cheapestRoom;
+}
