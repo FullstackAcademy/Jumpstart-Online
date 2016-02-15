@@ -8,17 +8,21 @@ function findVacantRooms(arr){
 	return vacantRooms;
 }
 function findCheapestVacantRoom(arr){
-	var cheapestRoom = [];
-	var cheapest;
-
-	for(var i = 0; i < arr.length; i++){
-		if(typeof arr[i] === 'number'){
-			if(!cheapest || arr[i] < cheapest){
-				cheapest = arr[i];
-				cheapestRoom.push(i, arr[i]);
-			}
-		}
-	}
-
-	return cheapestRoom;
+  var cheapest;
+  var cheapestRoom = [];
+  for(var index = 0; index < arr.length; index++){
+    if(arr[index] !== "occupied"){
+      if(cheapest === undefined || cheapest > arr[index]){
+        cheapest = arr[index];
+      }
+    }
+  }
+  
+  if(cheapest){
+    cheapestRoom.push(arr.indexOf(cheapest), cheapest)
+    return cheapestRoom;
+  } else {
+    return cheapestRoom;
+  }
+  
 }
