@@ -4,5 +4,5 @@ function prime(num){
 	   		return false;
 	 	}
   }
-  return true;
+  return value > 1;
 }
