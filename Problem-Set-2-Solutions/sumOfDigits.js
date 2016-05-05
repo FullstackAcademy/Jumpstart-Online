@@ -19,5 +19,3 @@ function sumOfDigits(num){
 	}	
 	return sum;
 }
-
-sumOfDigits(555);
