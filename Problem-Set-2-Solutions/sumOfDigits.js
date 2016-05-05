@@ -8,3 +8,16 @@ function sumOfDigits(num){
 
 	return sum;
 }
+
+function sumOfDigits(num){
+	var sum = 0;
+	var	numStr = num.toString();
+		
+	for(var i = 0; i < numStr.length; i++){
+		// or parseInt(numStr[i],10)
+		sum += +numStr[i];
+	}	
+	return sum;
+}
+
+sumOfDigits(555);
