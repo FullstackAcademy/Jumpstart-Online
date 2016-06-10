@@ -11,7 +11,7 @@ function sumOfDigits(num){
 
 function sumOfDigits(num){
 	var sum = 0;
-	var	numStr = num.toString();
+	var numStr = num.toString();
 		
 	for(var i = 0; i < numStr.length; i++){
 		// or parseInt(numStr[i],10)
